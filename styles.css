@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-goroda-v-stile-kiberpank-oboi-43.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ff00; /* Neon green color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    padding: 1em;
+    box-shadow: 0 0 10px #00ff00;
+    z-index: 10;
+    position: relative;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+nav {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #00ff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding: 1em;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1em 0;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff; /* Neon pink color */
+}
+
+main {
+    padding: 2em;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff00;
+    margin: 2em;
+}
+
+.mod {
+    border: 1px solid #00ff00;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ff00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mod:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
