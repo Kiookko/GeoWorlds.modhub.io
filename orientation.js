@@ -1,19 +1,19 @@
-window.addEventListener('orientationchange', function() {
-    if (window.orientation === 0) {
-        console.log('Portrait mode');
-        // Add code to execute when in portrait mode
-    } else {
-        console.log('Landscape mode');
-        // Add code to execute when in landscape mode
-    }
-});
+function adjustLayout() {
+    const image = document.getElementById("responsiveImage");
 
-window.addEventListener('resize', function() {
     if (window.innerHeight > window.innerWidth) {
         console.log('Portrait mode');
-        // Add code to execute when in portrait mode
+        image.style.width = "auto";
+        image.style.height = "100vh";
     } else {
         console.log('Landscape mode');
-        // Add code to execute when in landscape mode
+        image.style.width = "100vw";
+        image.style.height = "auto";
     }
-});
+}
+
+window.addEventListener('orientationchange', adjustLayout);
+window.addEventListener('resize', adjustLayout);
+
+// Initial call to set the correct layout
+document.addEventListener("DOMContentLoaded", adjustLayout);
