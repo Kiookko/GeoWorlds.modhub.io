@@ -65,14 +65,25 @@ main {
     margin: 2em;
 }
 
+.mod-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 .mod {
     border: 1px solid #00ff00;
     padding: 1em;
-    margin-bottom: 1em;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 10px #00ff00;
     transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(50% - 1em);
+    box-sizing: border-box;
+}
+
+.mod:first-child {
+    flex-basis: 100%;
 }
 
 .mod:hover {
@@ -94,4 +105,3 @@ button:hover {
     background-color: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
 }
-
